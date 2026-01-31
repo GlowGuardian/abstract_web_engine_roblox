@@ -5,12 +5,16 @@ This repo provides a **template** for building a Roblox web engine that can fetc
 ## What's Included
 
 - `HttpClient` for HTTP requests through `HttpService`
-- `HtmlParser` that builds a DOM-like tree of elements, text nodes, and comments
+- `HtmlParser` that builds a DOM-like tree of elements, text nodes, comments, and doctypes
 - `CssParser` placeholder for extracting `<style>` blocks
 - `JsStub` placeholder for loading/executing JavaScript
 - `Renderer` placeholder that renders a basic preview UI, with image placeholders
 - `LinkRouter` to route clicks back to the engine
 - Example client script for wiring the engine to a `ScreenGui`
+
+## DOM Tree Notes
+
+The DOM builder now handles nested elements, basic attributes (quoted/unquoted/boolean), raw text elements (`<script>`, `<style>`), and comments. It is still a template and **not** a full HTML5-compliant parser yet.
 
 ## Placeholder Behavior
 
